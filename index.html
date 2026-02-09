@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  <marquee behavior="scroll" direction="left" scrollamount="6">
+</marquee>
+  </title>
+
+<style>
+/* ---------- RESET & BASE ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #e5e7eb;
+  margin: 0 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* ---------- HEADER / HERO ---------- */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 60px 20px;
+}
+
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  margin-bottom: 15px;
+}
+
+.dashboard-img {
+  width: 90%;
+  max-width: 700px;
+  margin-top: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  border-left: 6px solid #2563eb;
+  padding-left: 10px;
+}
+
+p {
+  max-width: 800px;
+}
+
+/* ---------- SKILLS ---------- */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #e0f2fe;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ---------- PROJECTS ---------- */
+.project {
+  background: #f8fafc;
+  padding: 25px;
+  margin-top: 25px;
+  border-left: 5px solid #2563eb;
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* ---------- CONTACT ---------- */
+.contact a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #020617;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  .dashboard-img {
+    width: 50%;
+    height: 50%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <img src="EVARD.jpg" alt="Evard Uwamani Profile Picture" class="profile-pic">
+  <h1>Evard Uwamani</h1>
+  <p>BSIT Student | Web & Mobile Application Development</p>
+  <img src="MAR.jpg" alt="Computer and Web Development" class="dashboard-img">
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    My name is Evard Uwamani. I am a Bachelor of Science in Information Technology
+    student specializing in Web and Mobile Application Development. I am passionate
+    about building modern websites, designing software solutions, and exploring new
+    technologies.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">UI / UX Basics</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>School Website Project</h3>
+    <p>
+      A multi-page school website developed using HTML and CSS as part of academic
+      coursework. The project demonstrates structured content, navigation, and styling.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Personal Portfolio Website</h3>
+    <p>
+      A personal portfolio website created to showcase my skills and projects, hosted
+      using GitHub Pages.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Information</h2>
+  <p>Email:
+    <a href="mailto:evarduwamani@gmail.com">evarduwamani@gmail.com</a>
+  </p>
+  <p>GitHub:
+    <a href="https://github.com/evard-uwamani" target="_blank">
+      github.com/evard-uwamani
+    </a>
+  </p>
+  <p>LinkedIn:
+    <a href="#">Not Available</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Evard Uwamani | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
